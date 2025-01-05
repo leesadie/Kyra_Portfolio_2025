@@ -45,12 +45,12 @@ export default function Carousel(): JSX.Element {
 
     return (
         <div
-            className="relative w-full max-w-screen-lg mx-auto"
+            className="relative md:w-full md:max-w-screen-lg md:mx-auto pb-20 md:pb-0"
             onMouseOver={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             {/* Image Container */}
-            <div className="relative h-[500px] w-[600px] overflow-hidden">
+            <div className="relative md:h-[500px] md:w-[600px] h-[300px] w-[325px] overflow-hidden">
                 <Image
                     src={images[currentIndex].src}
                     alt={`Slider Image ${currentIndex + 1}`}

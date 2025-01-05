@@ -10,7 +10,7 @@ const Navbar = () => {
     const router = useRouter(); 
 
     return (
-        <div className="w-full">
+        <div className="w-full sticky top-0 z-50 bg-inherit">
             <div className="py-4 border-b-[1px] border-neutral-300">
                 <Container>
                     <div
@@ -18,9 +18,11 @@ const Navbar = () => {
                             flex
                             flex-row
                             items-center
-                            justify-end
+                            md:justify-end
+                            justify-center
                             text-neutral-900
-                            mx-5
+                            md:mx-5
+                            mx-0
                             md:mx-0
                         "
                     >

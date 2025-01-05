@@ -26,6 +26,8 @@ const NavButton: React.FC<ButtonProps> = ({
                 ${isHovered ? 'opacity-50' : ''} 
                 ${isFocused ? 'font-bold' : ''}
                 text-neutral-900
+                text-sm
+                md:text-base
                 py-2
                 px-4
                 ease-out 

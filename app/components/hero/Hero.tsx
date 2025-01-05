@@ -4,8 +4,6 @@ import { font_med, font_reg } from "@/app/fonts";
 import Image from "next/image";
 import { IoIosArrowDropright } from "react-icons/io";
 
-font_med
-
 const Hero = () => {
     return (
         <div className="flex flex-col mt-20 mx-48">
@@ -25,17 +23,17 @@ const Hero = () => {
                         alt="lung"
                         width={100}
                         height={100}
-                        className="object-cover w-full h-full min-h-0 justify-center items-center hover:opacity-80 cursor-pointer transition"
+                        className="object-cover w-full md:h-full h-64 min-h-0 justify-center items-center hover:opacity-80 cursor-pointer transition"
                     />
                 </div>
-                <div className={` ${font_med.className} text-2xl mx-5`}>
+                <div className={` ${font_med.className} md:text-2xl text-base md:mx-5 mx-3`}>
                     Lung Diffusing Capacity in Extreme Environments (2023-2024)
-                    <div className="flex flex-row gap-3 pt-2">
-                        <div className={`${font_reg.className} italic pt-1`}>
+                    <div className="flex flex-row md:gap-3 gap-1 pt-2">
+                        <div className={`${font_reg.className} text-sm md:text-2xl italic pt-1`}>
                             University of Puget Sound
                         </div>
-                        <div className="text-neutral-900 hover:translate-x-2 hover:opacity-50 cursor-pointer transition">
-                            <IoIosArrowDropright size={36}/>
+                        <div className="text-neutral-900 md:text-4xl text-xl hover:translate-x-2 hover:opacity-50 cursor-pointer transition">
+                            <IoIosArrowDropright />
                         </div>
                     </div>
                 </div>

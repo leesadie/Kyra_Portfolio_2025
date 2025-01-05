@@ -7,12 +7,12 @@ import Carousel from "../components/about/Carousel";
 
 const AboutClient = () => {
     return (
-        <div className="flex flex-row mt-10 mx-40 gap-20 text-neutral-900 justify-between">
-            <div className="flex flex-col w-1/2">
-                <div className="mt-10 text-lg">
+        <div className="flex md:flex-row flex-col mt-10 md:mx-40 mx-8 md:gap-20 text-neutral-900 justify-between">
+            <div className="flex flex-col md:w-1/2">
+                <div className="md:mt-10 md:text-lg text-base">
                     ABOUT ME
                 </div>
-                <div className={`${font_med.className} text-6xl mt-2`}>
+                <div className={`${font_med.className} md:text-6xl text-4xl mt-2`}>
                     Kyra Lee
                 </div>
                 <div className="pt-5">
@@ -49,7 +49,7 @@ const AboutClient = () => {
                         </div>
                     </a>
                 </div>
-                <div className="hover:opacity-50 transition cursor-pointer pt-2 flex flex-row gap-1">
+                <div className="hover:opacity-50 transition cursor-pointer pt-2 flex flex-row md:gap-1">
                     <a target="_blank" rel="noopener noreferrer" href="https://kyralee29.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile">
                         Follow along with my Fulbright journey here!
                     </a>
