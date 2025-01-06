@@ -39,10 +39,12 @@ const Navbar = () => {
                                 label="Presentations"
                                 onClick={() => router.push('/presentations')}
                             />
-                            <NavButton 
-                                label="Resume"
-                                onClick={() => {}}
-                            />
+                            <a target="_blank" rel="noopener noreferrer" href="files/Kyra_Lee_Resume.pdf">
+                                <NavButton 
+                                    label="Resume"
+                                    onClick={() => {}}
+                                />
+                            </a>
                         </div>
                     </div>
                 </Container>
